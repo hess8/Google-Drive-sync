@@ -24,14 +24,13 @@ from apiclient.http import MediaFileUpload
 SCOPES = ['https://www.googleapis.com/auth/drive.metadata.readonly',
           'https://www.googleapis.com/auth/drive.file',
           'https://www.googleapis.com/auth/drive']
-CLIENT_SECRET_FILE = 'client_secret.json'
-APPLICATION_NAME = 'Drive Sync'
+CLIENT_SECRET_FILE = '/home/bret/.secret/desktop_client_secret.json'
+APPLICATION_NAME = 'Google Drive Sync'
 
 # Declare full path to folder and folder name
-FULL_PATH = r'PUT YOUR FULL FOLDER PATH HERE'
-DIR_NAME = 'PUT YOUR FOLDER NAME HERE'
-# Or simply
-# DIR_NAME = FULL_PATH.split('/')[-1]
+FULL_PATH = '/mnt/P/shared_VMs/skylinesC-related/backup/'
+DIR_NAME = 'backup_SkylinesC' #FULL_PATH.split('/')[-1] # The name must be unique on the Drive
+
 
 # Don't really need it here
 GOOGLE_MIME_TYPES = {
